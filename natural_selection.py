@@ -39,9 +39,10 @@ def yTree(num):
 #still need to fix the y splitting
 def notSoYtree(num):
     factor = random.uniform(0,1)
-    angle = random.randint(0,32)
+    angle = random.randint(0,33)
     prob = random.uniform(0, 1)
     xRand = random.uniform(0,1)
+    scale = 2
     print("factor: ", factor)
     print("angle: ", angle)
     print("steps: ", num)
@@ -52,14 +53,14 @@ def notSoYtree(num):
     else:
         leftBranch(num,angle)
         notSoYtree(num*factor)
-        rightBranch(num, angle,factor)
+        rightBranch(num,angle,factor,scale)
 
 def leftBranch(num,angle):
         foo.fd(num)
         foo.left(angle)
 
-def rightBranch(num,angle,factor):
-        foo.right(2*angle)
+def rightBranch(num,angle,factor,scale):
+        foo.right(scale*angle)
         notSoYtree(num*factor)
         foo.left(angle)
         foo.bk(num)

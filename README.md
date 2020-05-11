@@ -14,6 +14,9 @@ One last thing, using an alternative version of this fractal model, can we not u
 [youtube link](https://www.youtube.com/watch?v=96KpzM2Y4sg)
 
 ## Pictures of Generated Trees
+
+Before random angles.
+
 ![p1](pic1.png)
 
 ![p2](pic2.png)
@@ -23,6 +26,8 @@ One last thing, using an alternative version of this fractal model, can we not u
 ![p4](pic4.png)
 
 ![p5](pic5.png)
+
+After random angles.
 
 ![p6](pic6.png)
 
