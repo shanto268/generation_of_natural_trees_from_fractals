@@ -25,3 +25,11 @@ One last thing, using an alternative version of this fractal model, can we not u
 ![p5](pic5.png)
 
 ![p6](pic6.png)
+
+![p6](pic7.png)
+
+## Issues
+
+- [ ] Need to fix the Y splitting of trees
+- [ ] Need to incorporate certain optimization equations that capture the finite resource available to plants
+- [ ] Need to derive how random number sets depend on such optimization equations
