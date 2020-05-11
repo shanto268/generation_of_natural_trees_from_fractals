@@ -2,7 +2,7 @@ import turtle as tu
 import random
 foo = tu.Turtle()
 foo.speed(0) #fastest
-foo.sety(-70)
+foo.sety(-150)
 
 def randomMove():
     rotate = random.randint(0,360)
@@ -13,22 +13,24 @@ def randomMove():
 def moveRandomly():
     time = random.randint(20,23)
     for i in range(time):
-        random()
+        randomMove()
 
 def yTree(num):
     factor = random.uniform(0,1)
+    angle = random.randint(30,32)
     if (num < 1):
         return 
     else:
         foo.fd(num)
-        foo.left(30)
+        foo.left(angle)
         yTree(num*factor)
-        foo.right(60)
+        foo.right(2*angle)
         yTree(num*factor)
-        foo.left(30)
+        foo.left(angle)
         foo.bk(num)
 
 foo.ht()
 foo.left(90)
-yTree(120)
+yTree(150)
+#moveRandomly()
 tu.mainloop()
